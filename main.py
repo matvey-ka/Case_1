@@ -66,4 +66,4 @@ def main():
     turtle.done()
 
 
-main()
+main() $
