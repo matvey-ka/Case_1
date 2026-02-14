@@ -1,6 +1,7 @@
 import turtle
 
-
+screen = turtle.Screen()
+screen.setup(1200, 900)
 def square(x, y, a, color):
     turtle.up()
     turtle.setposition(x, y)
@@ -124,13 +125,13 @@ def star(x,y,a,color):
 
 
 def main():
-    square(-200, -100, 200, 'red')
-    triangle(100, -300, 200, 'blue')
-    rectangle(-200, 200, 200, 100, 'green')
-    circle(200, 50, 100, 'yellow')
-    rhomb(200, 50, 100, 'red')
-    hexagon(200, 50, 100, 'blue')
-    star(200, 50, 100, 'green')
+    square(-200, -100, 100, 'red')
+    triangle(100, -300, 100, 'blue')
+    rectangle(-200, 200, 100, 50, 'green')
+    circle(200, 50, 50, 'yellow')
+    rhomb(200, 50, 50, 'red')
+    hexagon(200, 50, 50, 'blue')
+    star(200, 50, 50, 'green')
     turtle.done()
 
 
