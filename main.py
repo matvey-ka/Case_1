@@ -1,3 +1,7 @@
+# Case-study #1
+# Developers: Popov M., Kartashov A.
+#
+
 import turtle
 
 screen = turtle.Screen()
@@ -6,6 +10,14 @@ turtle.speed(50)
 
 
 def square(x, y, a, color):
+    '''
+    Function drawing square
+    :param x: upper left x coordinate
+    :param y: upper left y coordinate
+    :param a: side length of square
+    :param color: color of square
+    :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -23,6 +35,14 @@ def square(x, y, a, color):
 
 
 def triangle(x, y, a, color):
+    '''
+    Function drawing triangle
+    :param x: lower left x coordinate
+    :param y: lower left y coordinate
+    :param a: side length of triangle
+    :param color: color of triangle
+    :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -36,6 +56,15 @@ def triangle(x, y, a, color):
 
 
 def rectangle(x, y, a, b, color):
+    '''
+    Function drawing rectangle
+    :param x: upper left x coordinate
+    :param y: upper left y coordinate
+    :param a: side 1 length of rectangle
+    :param b: side 2 length of rectangle
+    :param color: color of rectangle
+    :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -53,6 +82,14 @@ def rectangle(x, y, a, b, color):
 
 
 def circle(x, y, r, color):
+    '''
+    Function drawing circle
+    :param x: lower central x coordinate
+    :param y: lower central y coordinate
+    :param r: radius of circle
+    :param color: color of circle
+    :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -130,6 +167,10 @@ def star(x, y, a, color):
 
 
 def house():
+    '''
+    Function drawing house
+    :return: None
+    '''
     square(-500, 200, 150, 'khaki')
     square(-400, 160, 30, 'lightblue')
     square(-480, 160, 30, 'lightblue')
@@ -139,6 +180,10 @@ def house():
 
 
 def tree():
+    '''
+    Function drawing tree
+    :return: None
+    '''
     rectangle(-100, 130, 30, 80, 'saddlebrown')
     triangle(-125, 130, 80, 'green')
     triangle(-125, 180, 80, 'green')
@@ -147,6 +192,10 @@ def tree():
 
 
 def car():
+    '''
+    Function drawing car
+    :return: None
+    '''
     rectangle(100, 120, 150, 40, 'red')
     circle(130, 50, 20, 'black')
     circle(220, 50, 20, 'black')
@@ -155,6 +204,10 @@ def car():
 
 
 def robot():
+    '''
+    Function drawing robot
+    :return: None
+    '''
     rectangle(400, 120, 20, 70, 'gray')
     rectangle(450, 120, 20, 70, 'gray')
     square(390, 210, 90, 'darkgray')
@@ -173,4 +226,5 @@ def main():
     turtle.done()
 
 
-main()
+if __name__ == '__main__':
+    main()
