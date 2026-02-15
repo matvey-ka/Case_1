@@ -2,6 +2,7 @@ import turtle
 
 screen = turtle.Screen()
 screen.setup(1200, 900)
+turtle.speed(50)
 
 
 def square(x, y, a, color):
@@ -129,20 +130,46 @@ def star(x, y, a, color):
 
 
 def house():
-    square(-500,200,150,'khaki')
-    square(-400,160,30,'lightblue')
-    triangle(-500,200,150,'brown')
-    rectangle(-440,100,30,50,'saddlebrown')
+    square(-500, 200, 150, 'khaki')
+    square(-400, 160, 30, 'lightblue')
+    square(-480, 160, 30, 'lightblue')
+    triangle(-500, 200, 150, 'brown')
+    square(-440, 260, 30, 'lightblue')
+    rectangle(-440, 100, 30, 50, 'saddlebrown')
+
+
+def tree():
+    rectangle(-100, 130, 30, 80, 'saddlebrown')
+    triangle(-125, 130, 80, 'green')
+    triangle(-125, 180, 80, 'green')
+    triangle(-125, 230, 80, 'green')
+    star(-125, 320, 30, 'red')
+
+
+def car():
+    rectangle(100, 120, 150, 40, 'red')
+    circle(130, 50, 20, 'black')
+    circle(220, 50, 20, 'black')
+    rectangle(140, 170, 75, 50, 'orange')
+    rectangle(148, 160, 60, 30, 'lightblue')
+
+
+def robot():
+    rectangle(400, 120, 20, 70, 'gray')
+    rectangle(450, 120, 20, 70, 'gray')
+    square(390, 210, 90, 'darkgray')
+    rectangle(380, 210, 20, 70, 'gray')
+    rectangle(470, 210, 20, 70, 'gray')
+    hexagon(415, 280, 40, 'lightgray')
+    circle(420, 240, 5, 'red')
+    circle(450, 240, 5, 'red')
+
 
 def main():
-    '''square(-200, -100, 100, 'red')
-    triangle(100, -300, 100, 'blue')
-    rectangle(-200, 200, 100, 50, 'green')
-    circle(200, 50, 50, 'yellow')
-    rhomb(200, 50, 50, 'red')
-    hexagon(-100, 50, 50, 'blue')
-    star(300, 50, 50, 'black')'''
     house()
+    tree()
+    car()
+    robot()
     turtle.done()
 
 
