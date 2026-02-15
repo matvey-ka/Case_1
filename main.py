@@ -128,6 +128,12 @@ def star(x, y, a, color):
     turtle.end_fill()
 
 
+def house():
+    square(-500,200,150,'khaki')
+    square(-400,160,30,'lightblue')
+    triangle(-500,200,150,'brown')
+    rectangle(-440,100,30,50,'saddlebrown')
+
 def main():
     '''square(-200, -100, 100, 'red')
     triangle(100, -300, 100, 'blue')
@@ -136,6 +142,7 @@ def main():
     rhomb(200, 50, 50, 'red')
     hexagon(-100, 50, 50, 'blue')
     star(300, 50, 50, 'black')'''
+    house()
     turtle.done()
 
 
