@@ -64,7 +64,7 @@ def circle(x, y, r, color):
 def rhomb(x, y, a, color):
     turtle.up()
     turtle.setposition(x, y)
-    ,.down()
+    turtle.down()
     turtle.fillcolor(color)
     turtle.begin_fill()
     turtle.forward(a)
