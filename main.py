@@ -23,14 +23,9 @@ def square(x, y, a, color):
     turtle.down()
     turtle.fillcolor(color)
     turtle.begin_fill()
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
+    for _ in range(4):
+        turtle.forward(a)
+        turtle.right(90)
     turtle.end_fill()
 
 
@@ -48,10 +43,9 @@ def triangle(x, y, a, color):
     turtle.down()
     turtle.fillcolor(color)
     turtle.begin_fill()
-    turtle.forward(a)
-    turtle.left(120)
-    turtle.forward(a)
-    turtle.right(120)
+    for _ in range(3):
+        turtle.forward(a)
+        turtle.left(120)
     turtle.end_fill()
 
 
@@ -70,14 +64,11 @@ def rectangle(x, y, a, b, color):
     turtle.down()
     turtle.fillcolor(color)
     turtle.begin_fill()
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(b)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(b)
-    turtle.right(90)
+    for _ in range(2):
+        turtle.forward(a)
+        turtle.right(90)
+        turtle.forward(b)
+        turtle.right(90)
     turtle.end_fill()
 
 
