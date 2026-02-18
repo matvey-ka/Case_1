@@ -9,6 +9,7 @@ screen.setup(1200, 900)
 screen.bgcolor("azure")
 turtle.tracer(False)
 
+
 def square(x, y, a, color):
     '''
     Function drawing square
@@ -92,13 +93,13 @@ def circle(x, y, r, color):
 
 def rhomb(x, y, a, color):
     '''
-        Function drawing rhomb
-        :param x: lower left x coordinate
-        :param y: lower left y coordinate
-        :param a: side length of rhomb
-        :param color: color of rhomb
-        :return: None
-        '''
+    Function drawing rhomb
+    :param x: lower left x coordinate
+    :param y: lower left y coordinate
+    :param a: side length of rhomb
+    :param color: color of rhomb
+    :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -114,13 +115,13 @@ def rhomb(x, y, a, color):
 
 def hexagon(x, y, a, color):
     '''
-        Function drawing hexagon
-        :param x: lower left x coordinate
-        :param y: lower left y coordinate
-        :param a: side length of hexagon
-        :param color: color of hexagon
-        :return: None
-        '''
+    Function drawing hexagon
+    :param x: lower left x coordinate
+    :param y: lower left y coordinate
+    :param a: side length of hexagon
+    :param color: color of hexagon
+    :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -134,13 +135,13 @@ def hexagon(x, y, a, color):
 
 def star(x, y, a, color):
     '''
-        Function drawing star
-        :param x: lower left x coordinate
-        :param y: lower left y coordinate
-        :param a: side length of star
-        :param color: color of star
-        :return: None
-        '''
+    Function drawing star
+    :param x: lower left x coordinate
+    :param y: lower left y coordinate
+    :param a: side length of star
+    :param color: color of star
+    :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -244,8 +245,8 @@ def tank():
 
 def flower():
     '''
-        Function drawing flower
-        :return: None
+    Function drawing flower
+    :return: None
     '''
     rectangle(160, -130, 5, 200, 'green')
     hexagon(150, -100, 25, 'yellow')
@@ -297,4 +298,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
