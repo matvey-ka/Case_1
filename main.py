@@ -6,7 +6,8 @@ import turtle
 
 screen = turtle.Screen()
 screen.setup(1200, 900)
-turtle.speed(50)
+screen.bgcolor("azure")
+turtle.speed(11)
 
 
 def square(x, y, a, color):
@@ -75,8 +76,8 @@ def rectangle(x, y, a, b, color):
 def circle(x, y, r, color):
     '''
     Function drawing circle
-    :param x: lower central x coordinate
-    :param y: lower central y coordinate
+    :param x: bottom x coordinate
+    :param y: bottom y coordinate
     :param r: radius of circle
     :param color: color of circle
     :return: None
@@ -212,33 +213,34 @@ def rocket():
     :return: None
     '''
     rectangle(-500, -100, 80, 200, 'lightgray')
-    triangle(-500,-100,80,'red')
-    circle(-460,-160,15,'lightblue')
-    circle(-460,-210,15,'lightblue')
-    circle(-460,-260,15,'lightblue')
+    triangle(-500, -100, 80, 'red')
+    circle(-460, -160, 15, 'lightblue')
+    circle(-460, -210, 15, 'lightblue')
+    circle(-460, -260, 15, 'lightblue')
     rectangle(-530, -250, 30, 50, 'gray')
     rectangle(-420, -250, 30, 50, 'gray')
     turtle.right(60)
-    rhomb(-515,-300,35,'orange')
+    rhomb(-515, -300, 35, 'orange')
     rhomb(-405, -300, 35, 'orange')
     turtle.left(60)
+
 
 def tank():
     '''
     Function drawing tank
     :return: None
     '''
-    rectangle(-220,-200,150,70,'green')
+    rectangle(-220, -200, 150, 70, 'green')
     circle(-270, -320, 25, 'darkgreen')
     circle(-20, -320, 25, 'darkgreen')
-    rectangle(-270,-270,250,50,'darkgreen')
-    rectangle(-70,-230,80,15,'grey')
-    circle(-265,-318,22,'black')
-    circle(-205,-318,22,'black')
-    circle(-145,-318,22,'black')
-    circle(-85,-318,22,'black')
+    rectangle(-270, -270, 250, 50, 'darkgreen')
+    rectangle(-70, -230, 80, 15, 'grey')
+    circle(-265, -318, 22, 'black')
+    circle(-205, -318, 22, 'black')
+    circle(-145, -318, 22, 'black')
+    circle(-85, -318, 22, 'black')
     circle(-25, -318, 22, 'black')
-    star(-200,-220,15,'red')
+    star(-200, -220, 15, 'red')
 
 
 def flower():
@@ -246,16 +248,16 @@ def flower():
         Function drawing flower
         :return: None
     '''
-    rectangle(160,-130,5,200,'green')
-    hexagon(150,-100,25,'yellow')
-    hexagon(115,-80,25,'red')
-    hexagon(150,-60,25,'orange')
-    hexagon(187,-80,25,'gold')
-    hexagon(187,-123,25,'lightgreen')
-    hexagon(150,-143,25,'lightblue')
-    hexagon(114,-123,25,'brown')
+    rectangle(160, -130, 5, 200, 'green')
+    hexagon(150, -100, 25, 'yellow')
+    hexagon(115, -80, 25, 'red')
+    hexagon(150, -60, 25, 'orange')
+    hexagon(187, -80, 25, 'gold')
+    hexagon(187, -123, 25, 'lightgreen')
+    hexagon(150, -143, 25, 'lightblue')
+    hexagon(114, -123, 25, 'brown')
     turtle.left(60)
-    rhomb(165,-250,40,'darkgreen')
+    rhomb(165, -250, 40, 'darkgreen')
     turtle.right(60)
 
 
@@ -268,16 +270,16 @@ def ship():
     triangle(350, -320, 58, 'saddlebrown')
     triangle(500, -320, 58, 'saddlebrown')
     turtle.right(60)
-    rectangle(350,-270,150,50,'saddlebrown')
-    rectangle(400, -70,7,200,'saddlebrown')
+    rectangle(350, -270, 150, 50, 'saddlebrown')
+    rectangle(400, -70, 7, 200, 'saddlebrown')
     turtle.right(90)
-    triangle(407,-100,150,'white')
-    triangle(407,-70,25,'red')
+    triangle(407, -100, 150, 'teal')
+    triangle(407, -70, 25, 'red')
     turtle.left(90)
-    circle(370,-310,13,'lightblue')
+    circle(370, -310, 13, 'lightblue')
     circle(420, -310, 13, 'lightblue')
     circle(470, -310, 13, 'lightblue')
-    star(430,-160,15,'yellow')
+    star(430, -160, 15, 'yellow')
 
 
 def main():
