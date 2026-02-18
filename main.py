@@ -7,8 +7,7 @@ import turtle
 screen = turtle.Screen()
 screen.setup(1200, 900)
 screen.bgcolor("azure")
-turtle.speed(11)
-
+turtle.tracer(False)
 
 def square(x, y, a, color):
     '''
@@ -293,6 +292,7 @@ def main():
     ship()
     turtle.hideturtle()
     turtle.done()
+    turtle.update()
 
 
 if __name__ == '__main__':
